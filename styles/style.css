@@ -478,7 +478,8 @@ main {
     margin-block-end: 20px;
   }
 
-  .block__about-description {
+  .block__about-description,
+  .container__description {
     margin-top: 10px;
   }
 
