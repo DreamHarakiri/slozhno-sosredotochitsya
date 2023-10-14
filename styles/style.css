@@ -176,8 +176,7 @@ main {
 }
 
 .first-section {
-  margin-block-start: 134px;
-  padding-top: 60px;
+  margin-block-start: 194px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
