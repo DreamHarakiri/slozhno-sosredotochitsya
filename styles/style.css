@@ -518,4 +518,10 @@ main {
   .picture-section {
     padding: 0;
   }
+
+  .second-section,
+  .third-section,
+  .picture-section {
+    margin-block-top: 50px;
+  }
 }
