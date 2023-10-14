@@ -446,6 +446,7 @@ main {
 
   .first-section {
     flex-wrap: wrap;
+    margin-block-start: 0;
   }
 
   .third-section {
