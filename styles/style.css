@@ -517,11 +517,6 @@ main {
   .third-section,
   .picture-section {
     padding: 0;
-  }
-
-  .second-section,
-  .third-section,
-  .picture-section {
     margin-block-start: 50px;
   }
 }
