@@ -519,4 +519,8 @@ main {
     padding: 0;
     margin-block-start: 50px;
   }
+
+  .block__about-description {
+    margin-block-start: 10px;
+  }
 }
