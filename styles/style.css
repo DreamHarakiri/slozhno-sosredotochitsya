@@ -447,6 +447,7 @@ main {
     flex-wrap: wrap;
     margin-block-start: 0;
     padding: 0;
+    gap: 0;
   }
 
   .third-section {
@@ -526,5 +527,9 @@ main {
   main {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .header__firstSection {
+    max-width: 355px;
   }
 }
