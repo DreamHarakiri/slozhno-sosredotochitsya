@@ -511,8 +511,6 @@ main {
   .picture-header {
     margin-block-start: 0;
   }
-
-  .first-section,
   .second-section,
   .third-section,
   .picture-section {
@@ -520,7 +518,8 @@ main {
     margin-block-start: 50px;
   }
 
-  .third__container-description {
+  .third__container-description,
+  img {
     margin-block-start: 10px;
   }
 }
