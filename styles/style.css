@@ -387,56 +387,6 @@ main {
 }
 /**/
 
-@media (max-width: 1024px) {
-  .header {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr 192px 1fr;
-    align-items: center;
-    min-inline-size: 355px;
-    block-size: 100vh;
-  }
-
-  .header__theme-menu {
-    justify-self: end;
-    margin-right: 5px;
-  }
-
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--small, 10px);
-    padding: 0;
-    list-style: none;
-  }
-
-  .header__text {
-    margin: 0;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
-  .block__header-description {
-    display: inline-block;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    color: var(--bg-color, #000028);
-    font-weight: 700;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 23.4px;
-    background-color: var(--accent-color, #ff0070);
-    max-width: 364px;
-  }
-
-  .first-section {
-    margin-block-start: 20px;
-  }
-
-  .container__secondBlock {
-    flex-wrap: wrap;
-  }
-}
-
 @media (max-width: 768px) {
   .header__text {
     margin: 0;
