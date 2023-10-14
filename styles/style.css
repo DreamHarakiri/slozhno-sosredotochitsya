@@ -154,6 +154,10 @@ ul li {
   margin-top: 114px;
 }
 
+.text__header-description {
+  margin: 0;
+}
+
 /**/
 
 /* main */
@@ -274,6 +278,7 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
+  max-width: 315px;
 }
 
 .third__section-container {
