@@ -498,4 +498,12 @@ main {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .third-section {
+    margin-block-start: 0;
+  }
+
+  .picture-header {
+    margin-block-start: 0;
+  }
 }
