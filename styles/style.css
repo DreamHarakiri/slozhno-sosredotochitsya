@@ -177,7 +177,7 @@ main {
 
 .first-section {
   margin-block-start: 134px;
-
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -281,7 +281,7 @@ main {
 }
 
 .third__section-container {
-  max-width: 647px;
+  max-width: 647.552px;
 }
 
 .third__container-header {
