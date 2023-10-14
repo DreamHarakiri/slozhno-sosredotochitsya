@@ -472,6 +472,14 @@ main {
   .block__header-description {
     max-width: 335px;
     width: 335px;
+    max-height: 117px;
+  }
+
+  p {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
   }
 
   .decorated-zone::before {
