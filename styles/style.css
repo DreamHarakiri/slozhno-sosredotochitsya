@@ -478,6 +478,10 @@ main {
     margin-block-end: 20px;
   }
 
+  .block__about-description {
+    margin-top: 10px;
+  }
+
   p {
     margin: 0;
     margin-block-start: 0;
