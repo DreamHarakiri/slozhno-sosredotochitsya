@@ -176,6 +176,28 @@ main {
   line-height: 23.4px; /* 130% */
 }
 
+.link {
+  text-decoration: none;
+  color: var(--color-link);
+  text-shadow: 2px 2px 0 var(--text-shadow);
+}
+
+.link:hover {
+  border-block-end: 1px solid var(--main-text-color);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  display: inline-block; /* добавлен для включения свойств для отображения высоты обводки по макету */
+  line-height: 0.5;
+  padding-block-end: 3px;
+  outline: 1px solid var(--main-text-color);
+  outline-offset: 1px;
+}
+
 .section__question-container-header {
   width: 100%;
   background-color: var(--accent-color);
@@ -215,7 +237,7 @@ main {
 .details__container-header {
   background: var(--accent-color);
   height: 23px;
-  color: var(--bg-color);
+  color: var(--accent-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -244,6 +266,14 @@ main {
   gap: 20px;
 }
 
+.section__answer-header:first-child {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
 .section__answer-right {
   /*width: 650px; */
   width: 100%;
@@ -260,7 +290,7 @@ main {
 .section__answer-header {
   width: 100%;
   height: 23px;
-  color: var(--bg-color);
+  color: var(--accent-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -282,7 +312,7 @@ main {
 /* section pictures*/
 
 .section__pictures-header {
-  color: var(--bg-color);
+  color: var(--accent-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -552,5 +582,10 @@ footer::after {
     inline-size: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  footer {
+    margin-block-start: 0;
+    padding-bottom: 20px;
   }
 }
