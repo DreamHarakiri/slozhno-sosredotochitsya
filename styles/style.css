@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 body {
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--bg-img);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid #ff0070;
+  outline: 1px solid var(--accent-color);
 }
 
 ul li {
@@ -30,11 +30,11 @@ ul li {
 }
 
 .header__theme-menu-button {
-  color: #ff0070;
+  color: var(--accent-color);
   border: none;
   background-color: transparent;
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   margin-block-start: 3px;
   width: 70px;
 }
@@ -45,23 +45,24 @@ ul li {
   align-items: center;
   position: absolute;
   gap: 10px;
-  top: 0px;
+  top: 5px;
   right: 20px;
+  margin: 0;
   text-transform: uppercase;
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 138.889% */
-  color: #ff0070;
+  color: var(--accent-color);
 }
 
 .rec::after {
   content: "";
   inline-size: 9px;
   block-size: 9px;
-  background-color: #ff0070;
-  filter: drop-shadow(0 0 4px #ff0070);
+  background-color: var(--accent-color);
+  filter: drop-shadow(0 0 4px var(--accent-color));
   border-radius: 50%;
   margin-inline-end: 9px;
 }
@@ -69,6 +70,10 @@ ul li {
 .header {
   block-size: 100vh;
   min-block-size: 668px;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .header::before {
@@ -76,11 +81,11 @@ ul li {
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid #ff0070;
-  border-block-end: 1px solid #ff0070;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
   position: absolute;
-  inset-inline-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  inset-block-end: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  inset-inline-start: 20px;
+  inset-block-end: 35px;
 }
 
 .header::after {
@@ -88,19 +93,19 @@ ul li {
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid #ff0070;
-  border-block-start: 1px solid #ff0070;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
   position: absolute;
-  inset-inline-end: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  inset-block-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  inset-inline-end: 20px;
+  inset-block-start: 5px;
 }
 
 .header__focus {
-  color: #db00ff;
+  color: var(--header-color);
 
-  text-shadow: 4px 4px 0px #ff0070;
+  text-shadow: 4px 4px 0px var(--accent-color);
   font-family: IBM Plex Mono;
-  font-size: 157px;
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
@@ -116,11 +121,11 @@ ul li {
 .header__description {
   width: 491px;
   height: 70px;
-  background: #ff0070;
+  background: var(--accent-color);
 
-  color: #000028;
+  color: var(--accent-text-color);
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
@@ -143,27 +148,29 @@ main {
   display: flex;
   justify-content: space-between;
   margin-block-start: 25px;
+  width: 100%;
   gap: 20px;
 }
 
 .section__header {
-  color: #ff0070;
+  color: var(--accent-color);
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
 
-  width: 314.96px;
+  width: 100%;
+  max-width: 315px;
 }
 
 .section__question-container {
-  width: 648.918px;
+  width: 100%;
   margin-block-start: 18px;
 
   color: #f1b2ce;
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
@@ -171,12 +178,12 @@ main {
 
 .section__question-container-header {
   width: 100%;
-  background-color: #ff0070;
+  background-color: var(--accent-color);
   height: 23px;
 
-  color: #000028;
+  color: var(--accent-text-color);
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
@@ -202,25 +209,25 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  min-width: 100%;
 }
 
 .details__container-header {
-  background: #ff0070;
+  background: var(--accent-color);
   height: 23px;
-  color: #000028;
+  color: var(--bg-color);
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
 }
 
 .details__container-setting {
-  width: 315px;
-  max-width: 100%;
+  width: 100%;
   color: #f1b2ce;
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
@@ -233,15 +240,18 @@ main {
 
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
+  gap: 20px;
 }
 
 .section__answer-right {
-  width: 650px;
+  /*width: 650px; */
+  width: 100%;
   margin-block-start: 19px;
 
   color: #f1b2ce;
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
@@ -250,13 +260,13 @@ main {
 .section__answer-header {
   width: 100%;
   height: 23px;
-  color: #000028;
+  color: var(--bg-color);
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
-  background-color: #ff0070;
+  background-color: var(--accent-color);
 }
 
 .section__answer-header:not(:first-child) {
@@ -272,15 +282,15 @@ main {
 /* section pictures*/
 
 .section__pictures-header {
-  color: #000028;
+  color: var(--bg-color);
   font-family: IBM Plex Mono;
-  font-size: 18px;
+  font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
   height: 23px;
   width: 100%;
-  background-color: #ff0070;
+  background-color: var(--accent-color);
 
   margin-block-start: 80px;
 }
@@ -324,7 +334,8 @@ main {
 }
 
 /**/
-
+/**/
+/*footer*/
 footer {
   block-size: 100vh;
   min-block-size: 668px;
@@ -341,11 +352,11 @@ footer::before {
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid #ff0070;
-  border-block-end: 1px solid #ff0070;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
   position: absolute;
-  inset-inline-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  inset-block-end: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  inset-inline-start: var(--padding);
+  inset-block-end: var(--padding);
 }
 
 footer::after {
@@ -353,20 +364,193 @@ footer::after {
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid #ff0070;
-  border-block-start: 1px solid #ff0070;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
   position: absolute;
-  inset-inline-end: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  inset-block-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  inset-inline-end: var(--padding);
+  inset-block-start: var(--padding);
 }
 
 .footer__header {
-  color: #db00ff;
-  text-shadow: 2px 2px 0px #ff0070;
+  color: var(--header-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
   font-family: IBM Plex Mono;
-  font-size: 157px;
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 129.525px */
 }
 /**/
+
+/* планшет */
+
+@media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100vw;
+    block-size: 100vh;
+    min-block-size: 668px;
+    align-items: center;
+    position: relative;
+  }
+
+  .header__theme-menu {
+    justify-self: end;
+    padding-inline-end: 3px;
+    padding-block-start: 100px;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-inline-end: 17px;
+  }
+
+  .header__focus {
+    margin-block-start: 90px;
+  }
+
+  .header__description {
+    width: 364px;
+    height: 117px;
+
+    margin-inline-end: 20px;
+    margin-block-end: 110px;
+  }
+  /* main */
+  /*section__question*/
+  .section__question {
+    margin-block-start: 45px;
+  }
+
+  .section__header {
+    width: 50%;
+  }
+
+  .section__details h3 {
+    max-width: 236px;
+  }
+  /* section__details*/
+  .section__details-container {
+    display: block;
+  }
+
+  .details__container-setting p {
+    margin: 0;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+  }
+
+  .details__container-setting:not(:first-child) {
+    margin-block-start: 20px;
+  }
+
+  /* section__answer*/
+
+  .section__answer {
+    margin-block-start: 65px;
+  }
+}
+/**/
+
+@media (max-width: 375px) {
+  .header__theme-menu {
+    padding-block-start: 0px;
+  }
+
+  .header__theme-menu-list {
+    margin-inline-end: 7px;
+  }
+
+  .header__focus {
+    margin-block-start: 0px;
+    margin-inline-start: 5px;
+    margin-bottom: 0;
+  }
+
+  .header__description-container {
+    width: 100%;
+    height: 117px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    margin-block-end: 15px;
+  }
+
+  .header__description {
+    margin-top: 0;
+  }
+
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section__question {
+    flex-wrap: wrap;
+  }
+
+  .section__header {
+    width: 100%;
+  }
+
+  .section__details h3 {
+    max-width: 100%;
+  }
+
+  .section__answer,
+  .picture__gridContainer {
+    display: block;
+  }
+
+  .section__answer-header {
+    height: auto;
+  }
+
+  .section__question {
+    margin-block-start: 20px;
+    padding-bottom: 0;
+    gap: 0;
+  }
+
+  .section__question-container {
+    margin-block-start: 0;
+  }
+
+  .section__details {
+    margin-top: 52px;
+  }
+  .section__header:not(:first-child) {
+    margin-bottom: 10px;
+  }
+
+  .section__answer {
+    margin-block-start: 52px;
+    width: 100%;
+  }
+
+  .section__header {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section__answer-header {
+    margin-top: 20px;
+  }
+
+  .section__pictures-header {
+    margin-block-start: 50px;
+  }
+
+  .cards-section__image {
+    margin-block-start: 10px;
+    block-size: 100%;
+    box-sizing: border-box;
+
+    inline-size: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
