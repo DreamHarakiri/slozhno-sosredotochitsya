@@ -513,7 +513,8 @@ footer::after {
     margin-top: 0;
   }
 
-  main {
+  main,
+  footer {
     padding-left: 10px;
     padding-right: 10px;
   }
