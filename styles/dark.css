@@ -4,36 +4,7 @@
   переключая тему
 */
 
-:root {
-  --bg__img-page: url(../images/cover-image-dark.png);
-  --bg__color-page: #000028;
-
-  --navbar__btn-color: #ff0070;
-  --navbar__btn-border: #ff0070;
-  --rec__color: #ff0070;
-
-  --title-color: #ff0070;
-
-  /* header */
-
-  --header__text-color: #db00ff;
-  --header__text-shadow: #ff0070;
-  --header__text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-
-  --block__header-description: #ff0070;
-  --text__header-description-color: #000028;
-
-  /* main */
-
-  --main__bg-color: #000028;
-  --main__accent-color: #ff0070;
-  --main__header-color: #000028;
-  --main__description-color: #f1b2ce;
-}
-
 .page.theme_dark {
-  display: block;
-
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
