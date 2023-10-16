@@ -513,7 +513,7 @@ footer::after {
 }
 /**/
 
-/*@media (max-width: 375px) {
+@media (max-width: 375px) {
   .header__theme-menu {
     padding-block-start: 0px;
     padding-block-end: 30px;
