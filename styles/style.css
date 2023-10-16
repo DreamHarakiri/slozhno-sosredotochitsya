@@ -1,21 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-body {
-  background-image: var(--bg-img);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-  padding: 0;
-  margin: 0;
-}
 /* header */
 .page {
   max-width: 1440px;
   max-height: 100vh;
   margin: auto;
   margin-block-start: 20px;
+
+  background-image: var(--bg-img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .header__theme-menu-list {
@@ -564,10 +560,6 @@ footer::after {
     display: block;
   }
 
-  .section__answer-header {
-    height: auto;
-  }
-
   .section__question {
     flex-wrap: wrap;
     margin-block-start: 0px;
@@ -598,6 +590,7 @@ footer::after {
 
   .section__answer-header {
     margin-top: 20px;
+    height: auto;
   }
 
   .section__pictures-header {
