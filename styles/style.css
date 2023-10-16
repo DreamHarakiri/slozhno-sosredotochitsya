@@ -12,13 +12,13 @@ body {
   max-width: 1440px;
   max-height: 100vh;
   margin: auto;
+  margin-block-start: 20px;
 }
 
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
   gap: 13px;
-  margin-inline-end: 43px;
 }
 
 .header__theme-menu-button_active {
@@ -37,6 +37,7 @@ ul li {
   font-size: var(--main-font-size);
   margin-block-start: 3px;
   width: 70px;
+  cursor: pointer;
 }
 
 .rec {
@@ -81,8 +82,8 @@ ul li {
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--subtitle-text-color);
+  border-block-end: 1px solid var(--subtitle-text-color);
   position: absolute;
   inset-inline-start: 20px;
   inset-block-end: 35px;
@@ -93,17 +94,29 @@ ul li {
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--subtitle-text-color);
+  border-block-start: 1px solid var(--subtitle-text-color);
   position: absolute;
   inset-inline-end: 20px;
   inset-block-start: 5px;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--btn-hover-border-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--subtitle-text-color);
+}
+
 .header__focus {
   color: var(--header-color);
 
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px var(--text-shadow);
   font-family: IBM Plex Mono;
   font-size: var(--title-font-size);
   font-style: normal;
@@ -131,7 +144,7 @@ ul li {
   line-height: 23.4px; /* 130% */
 
   margin-inline-end: 20px;
-  margin-top: 10px;
+  margin-block-start: 114px;
 }
 
 /**/
@@ -153,13 +166,14 @@ main {
 }
 
 .section__header {
-  color: var(--accent-color);
+  color: var(--subtitle-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
 
+  margin-block-start: 25px;
   width: 100%;
   max-width: 315px;
 }
@@ -168,7 +182,7 @@ main {
   width: 100%;
   margin-block-start: 18px;
 
-  color: #f1b2ce;
+  color: var(--main-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -178,7 +192,7 @@ main {
 
 .link {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--main-text-color);
   text-shadow: 2px 2px 0 var(--text-shadow);
 }
 
@@ -247,18 +261,23 @@ main {
 
 .details__container-setting {
   width: 100%;
-  color: #f1b2ce;
+  color: var(--main-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
+  margin-block-start: 20px;
+}
+
+.details__container-setting p {
+  margin-block-start: 10px;
 }
 /**/
 
 /* section__answer */
 .section__answer {
-  margin-block-start: 41px;
+  margin-block-start: 61px;
 
   display: flex;
   justify-content: space-between;
@@ -279,7 +298,7 @@ main {
   width: 100%;
   margin-block-start: 19px;
 
-  color: #f1b2ce;
+  color: var(--main-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
   font-style: normal;
@@ -374,7 +393,7 @@ footer {
   align-items: center;
   position: relative;
 
-  margin-block-start: 60px;
+  margin-block-start: 65px;
 }
 
 footer::before {
@@ -428,7 +447,7 @@ footer::after {
   .header__theme-menu {
     justify-self: end;
     padding-inline-end: 3px;
-    padding-block-start: 100px;
+    padding-block-start: 0px;
   }
 
   .header__theme-menu-list {
@@ -439,7 +458,7 @@ footer::after {
   }
 
   .header__focus {
-    margin-block-start: 90px;
+    margin-block-start: 0px;
   }
 
   .header__description {
@@ -447,12 +466,13 @@ footer::after {
     height: 117px;
 
     margin-inline-end: 20px;
-    margin-block-end: 110px;
+    margin-block-start: 0px;
+    margin-block-end: 40px;
   }
   /* main */
   /*section__question*/
   .section__question {
-    margin-block-start: 45px;
+    margin-block-start: 30px;
   }
 
   .section__header {
@@ -488,6 +508,7 @@ footer::after {
 @media (max-width: 375px) {
   .header__theme-menu {
     padding-block-start: 0px;
+    padding-block-end: 30px;
   }
 
   .header__theme-menu-list {
@@ -496,25 +517,20 @@ footer::after {
 
   .header__focus {
     margin-block-start: 0px;
-    margin-inline-start: 5px;
-    margin-bottom: 0;
+    margin-inline-start: 10px;
+    margin-bottom: 30px;
   }
 
   .header__description-container {
     width: 100%;
     height: 117px;
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 0;
-    margin-block-end: 15px;
+    margin-block-end: 60px;
+    margin-inline-start: 10px;
   }
 
   .header__description {
     margin-top: 0;
-  }
-
-  main {
-    margin: auto;
   }
 
   main,
@@ -545,13 +561,13 @@ footer::after {
   }
 
   .section__question {
-    margin-block-start: 20px;
+    margin-block-start: 0px;
     padding-bottom: 0;
     gap: 0;
   }
 
   .section__question-container {
-    margin-block-start: 0;
+    margin-block-start: 20px;
   }
 
   .section__details {
