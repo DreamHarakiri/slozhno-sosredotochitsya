@@ -448,6 +448,7 @@ footer::after {
     justify-self: end;
     padding-inline-end: 3px;
     padding-block-start: 0px;
+    padding-block-end: 15px;
   }
 
   .header__theme-menu-list {
@@ -459,6 +460,7 @@ footer::after {
 
   .header__focus {
     margin-block-start: 0px;
+    margin-block-end: 30px;
   }
 
   .header__description {
@@ -467,12 +469,12 @@ footer::after {
 
     margin-inline-end: 20px;
     margin-block-start: 0px;
-    margin-block-end: 25px;
+    margin-block-end: 80px;
   }
   /* main */
   /*section__question*/
   .section__question {
-    margin-block-start: 35px;
+    margin-block-start: 15px;
   }
 
   .section__question-container {
