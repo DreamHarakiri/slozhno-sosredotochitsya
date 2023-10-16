@@ -513,6 +513,10 @@ footer::after {
     margin-top: 0;
   }
 
+  main {
+    margin: auto;
+  }
+
   main,
   footer {
     padding-left: 10px;
