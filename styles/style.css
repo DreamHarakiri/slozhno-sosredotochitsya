@@ -80,7 +80,7 @@ ul li {
   padding: 0;
 }
 
-.header::before {
+.decorated-zone::before {
   content: "";
   display: block;
   inline-size: 25px;
@@ -92,7 +92,7 @@ ul li {
   inset-block-end: 35px;
 }
 
-.header::after {
+.decorated-zone::after {
   content: "";
   display: block;
   inline-size: 25px;
@@ -394,30 +394,6 @@ footer {
   margin-block-start: 65px;
 }
 
-footer::before {
-  content: "";
-  display: block;
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
-  position: absolute;
-  inset-inline-start: var(--padding);
-  inset-block-end: var(--padding);
-}
-
-footer::after {
-  content: "";
-  display: block;
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-  position: absolute;
-  inset-inline-end: var(--padding);
-  inset-block-start: var(--padding);
-}
-
 .footer__header {
   color: var(--header-color);
   text-shadow: 2px 2px 0px var(--accent-color);
@@ -516,32 +492,36 @@ footer::after {
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100vw;
+
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .header__theme-menu {
     padding-block-start: 0px;
-    padding-block-end: 70px;
+    padding-block-end: 50px;
   }
 
   .header__theme-menu-list {
-    margin-inline-end: 7px;
-    margin-block-start: 50px;
+    margin-inline-end: 17px;
+    margin-block-start: 35px;
   }
 
   .header__focus {
-    margin-block-end: 45px;
-    margin-inline-start: 10px;
+    margin-block-end: 53px;
   }
 
   .header__description-container {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
-    margin-inline-start: 10px;
-    margin-bottom: 110px;
+    margin-block-end: 107px;
+
+    display: block;
   }
 
   .header__description {
-    margin-top: 0;
+    max-width: 355px;
+    margin: 0;
     line-height: 23.4px; /* 130% */
   }
 
@@ -582,7 +562,7 @@ footer::after {
   }
 
   .section__answer {
-    margin-block-start: 50px;
+    margin-block-start: 48px;
     width: 100%;
   }
 
@@ -590,9 +570,8 @@ footer::after {
     max-width: 100%;
   }
 
-  .section__answer-header {
-    margin-top: 23px;
-    height: auto;
+  .section__answer-right {
+    margin-block-start: 19px;
   }
 
   .section__pictures-header {
