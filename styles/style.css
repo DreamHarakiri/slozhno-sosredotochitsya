@@ -490,7 +490,7 @@ footer {
 @media (max-width: 375px) {
   .decorated-zone::before {
     inset-inline-start: 10px;
-    inset-block-end: 50px;
+    inset-block-end: 30px;
   }
 
   .decorated-zone::after {
@@ -560,7 +560,7 @@ footer {
 
   .section__question {
     flex-wrap: wrap;
-    margin-block-start: -25px;
+    margin-block-start: -5px;
     gap: 0;
   }
 
