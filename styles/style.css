@@ -516,19 +516,20 @@ footer {
   }
 
   .header__theme-menu-list {
-    margin-inline-end: 17px;
+    margin-inline-end: 8px;
     margin-block-start: 0px;
   }
 
   .header__focus {
-    margin-block-end: 47px;
+    margin-block-end: 50px;
+    margin-inline-start: 10px;
   }
 
   .header__description-container {
     max-width: 100%;
     margin: 0;
     margin-block-end: 105px;
-
+    margin-inline-start: 10px;
     display: block;
   }
 
@@ -591,8 +592,14 @@ footer {
     margin-block-start: 50px;
   }
 
-  .cards-section__image {
+  .picture__gridContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-block-start: 10px;
+  }
+
+  .cards-section__image {
     block-size: 100%;
     box-sizing: border-box;
 
@@ -602,7 +609,10 @@ footer {
   }
 
   footer {
-    margin-block-start: 0;
-    padding-bottom: 20px;
+    margin-block-start: 62px;
+  }
+
+  .footer__header {
+    margin-block-end: 50px;
   }
 }
