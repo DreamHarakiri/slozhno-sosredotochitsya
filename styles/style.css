@@ -459,7 +459,7 @@ footer {
     width: 50%;
   }
 
-  .section__details h3 {
+  .section__details h2 {
     max-width: 236px;
   }
   /* section__details*/
@@ -484,6 +484,14 @@ footer {
 
   .section__answer-right {
     margin-block-start: 24px;
+  }
+
+  footer {
+    margin-block-start: 75px;
+  }
+
+  .footer__header {
+    margin-block-end: 15px;
   }
 }
 /**/
