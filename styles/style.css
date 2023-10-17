@@ -7,8 +7,7 @@ body {
 /* header */
 .page {
   max-width: 100%;
-  width: 1440px;
-  max-height: 100vh;
+  min-height: 100vh;
   margin: auto;
   margin-block-start: 20px;
 
@@ -137,7 +136,6 @@ ul li {
 
 .header__description {
   width: 491px;
-  height: 70px;
   background: var(--accent-color);
 
   color: var(--accent-text-color);
@@ -219,7 +217,6 @@ main {
 .section__question-container-header {
   width: 100%;
   background-color: var(--accent-color);
-  height: 23px;
 
   color: var(--accent-text-color);
   font-family: IBM Plex Mono;
@@ -254,7 +251,6 @@ main {
 
 .details__container-header {
   background: var(--accent-color);
-  height: 23px;
   color: var(--accent-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
@@ -312,7 +308,6 @@ main {
 
 .section__answer-header {
   width: 100%;
-  height: 23px;
   color: var(--accent-text-color);
   font-family: IBM Plex Mono;
   font-size: var(--main-font-size);
@@ -341,7 +336,6 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
-  height: 23px;
   width: 100%;
   background-color: var(--accent-color);
 
@@ -468,8 +462,7 @@ footer::after {
   }
 
   .header__description {
-    width: 364px;
-    height: 117px;
+    max-width: 364px;
 
     margin-inline-end: 20px;
     margin-block-start: 0px;
@@ -542,7 +535,6 @@ footer::after {
 
   .header__description-container {
     width: 100%;
-    height: 117px;
     margin: 0;
     margin-inline-start: 10px;
     margin-bottom: 110px;
@@ -550,6 +542,7 @@ footer::after {
 
   .header__description {
     margin-top: 0;
+    line-height: 23.4px; /* 130% */
   }
 
   main,
@@ -594,7 +587,6 @@ footer::after {
   }
 
   .section__header {
-    width: 100%;
     max-width: 100%;
   }
 
