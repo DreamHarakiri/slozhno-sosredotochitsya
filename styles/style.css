@@ -137,18 +137,6 @@
   background-color: var(--accent-color);
 }
 
-.header__decoration-block {
-  display: flex;
-  gap: var(--small, 10px);
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  inset-inline-end: var(--padding);
-  inset-block-start: var(--padding);
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
-
 /**/
 
 /* main */
