@@ -1,6 +1,5 @@
 .page.theme_light {
-  --header-color: #ffc2e6;
-  --nav-button-color: #353430;
+  --title-color: #ffc2e6;
   --accent-color: #ff8dcb;
   --text-shadow: #ff8dcb;
   --bg-color: #fff1f7;
@@ -11,15 +10,9 @@
   --bg-img: url(../images/cover-image-light.png);
 }
 
-.page.theme_light .rec {
-  display: none;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
-    --header-color: #ffc2e6;
-    --nav-button-color: #353430;
-
+    --title-color: #ffc2e6;
     --accent-color: #ff8dcb;
     --text-shadow: #ff8dcb;
     --bg-color: #fff1f7;
@@ -29,14 +22,22 @@
     --accent-text-color: #353430;
     --bg-img: url(../images/cover-image-light.png);
   }
+
+  .theme_auto .header__decoration-block {
+    display: none;
+  }
+}
+
+.theme_light .header__decoration-block {
+  display: none;
 }
 
 @media (width > 768px) {
-  .header__focus {
+  .header__title {
     --text-shadow: #ff0070;
   }
 
-  .footer__header {
+  .footer__title {
     --text-shadow: #ff0070;
   }
 }
