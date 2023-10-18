@@ -404,7 +404,7 @@ footer {
   line-height: 82.5%; /* 129.525px */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .header__theme-menu {
     display: flex;
     flex-direction: column;
@@ -467,7 +467,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     display: grid;
     grid-template-rows: 1fr auto 1fr;
