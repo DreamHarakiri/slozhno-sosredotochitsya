@@ -384,7 +384,7 @@ footer {
 
 .footer__header {
   color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--text-shadow);
   font-family: var(--font-family);
   font-size: var(--title-font-size);
   font-style: normal;
@@ -416,15 +416,13 @@ footer {
     margin-block-start: 45px;
   }
 
-  .section__header:first-of-type {
+  .section__header {
     margin-block-start: 45px;
+    width: 50%;
   }
 
-  .section__header:not(:first-of-type) {
-    margin-top: 25px;
-  }
-  .section__header {
-    width: 50%;
+  .answer__setting {
+    margin-block-start: 25px;
   }
 
   .section__details h2 {
@@ -551,6 +549,10 @@ footer {
   }
   .section__header:not(:first-child) {
     margin-block-start: 150px;
+  }
+
+  .answer__setting {
+    max-width: max-content;
   }
 
   .section__answer {
