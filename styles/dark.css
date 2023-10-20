@@ -31,3 +31,13 @@
 .theme_dark .header__decoration-block {
   display: flex;
 }
+
+@media (width > 768px) {
+  .header__title {
+    --text-shadow: #ff0070;
+  }
+
+  .footer__header {
+    --text-shadow: #ff0070;
+  }
+}
